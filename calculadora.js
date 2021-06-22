@@ -25,3 +25,16 @@ function calculadora(num1, num2, operador) {
     }
    
 } 
+
+//Funcion para ejecutar calculadora
+
+const process = require('process');// Requiero process, módulo nativo de NodeJs 
+console.log(process.argv);
+
+const operacion = process.argv[2].toLowerCase();
+const num1 = Number(process.argv[3]);
+const num2 = Number(process.argv[4]);
+
+calculadora(num1, num2, operacion)
+// 0          1              2              3            4
+//node  calculadora.js   operacion      numero1       numero2
