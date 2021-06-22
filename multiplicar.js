@@ -3,3 +3,5 @@ function multiplicar(num1, num2) {
     console.log(resultado);
     return resultado
 }
+
+module.exports = multiplicar;
